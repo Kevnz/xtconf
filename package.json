@@ -1,0 +1,29 @@
+{
+  "name": "xtconf",
+  "version": "0.0.1",
+  "description": "Extended QConf module based on environment.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Kevnz/xtconf.git"
+  },
+  "keywords": [
+    "config",
+    "environment"
+  ],
+  "author": "Kevin Isom <kevin.isom@gmail.com>",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/Kevnz/xtconf/issues"
+  },
+  "homepage": "https://github.com/Kevnz/xtconf",
+  "dependencies": {
+    "qconf": "~2.2.0"
+  },
+  "devDependencies": {
+    "tap": "~0.4.8"
+  }
+}
