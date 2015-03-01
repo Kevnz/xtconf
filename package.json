@@ -1,6 +1,6 @@
 {
   "name": "xtconf",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "Extended QConf module based on environment.",
   "main": "index.js",
   "scripts": {
@@ -24,6 +24,6 @@
     "qconf": "~2.2.0"
   },
   "devDependencies": {
-    "tap": "~0.4.8"
+    "tap": "~0.7.1"
   }
 }
