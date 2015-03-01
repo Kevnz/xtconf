@@ -1,6 +1,5 @@
 var test = require("tap").test
 
-var util = require('util');
 test("Make sure default development enviroment is returned", function (t) {
     var config = require('./index')();
     t.equal(config.get('test-name'), "config.development.json", "config should be for development");
