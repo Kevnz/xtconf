@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/Kevnz/xtconf.png?branch=master)](https://travis-ci.org/Kevnz/xtconf)
 # xtconf
 
 Extended qconf based on environment
