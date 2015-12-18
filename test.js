@@ -1,14 +1,16 @@
 var test = require("tap").test
 
 test("Make sure default development enviroment is returned", function (t) {
-    var config = require('./index')();
+    var config = require('./index')(); 
     t.equal(config.get('test-name'), "config.development.json", "config should be for development");
+    t.equal(config.get('test-named'), "config.development.named.json", "config should also include the named version for dev");
     t.end();
 });
 
 test("Make sure passing in an enviroment returns correct config", function (t) {
     var config = require('./index')('test'); 
     t.equal(config.get('test-name'), "config.test.json", "config should be for development");
+    t.equal(config.get('test-named'), undefined);
     t.end();
 });
 
