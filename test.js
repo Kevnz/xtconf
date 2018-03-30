@@ -47,3 +47,17 @@ test('Config should accept overrides with an enviroment as well', function(t) {
   t.notOk(config.get('env'), 'This should have been deleted');
   t.end();
 });
+
+test('Config should add a TEST_PROP to env when testProp is set in config', t => {
+  const val = 'test prop';
+  var config = require('./index')({ env: 'test', testProp: val });
+  t.equal(process.env.TEST_PROP, val);
+  t.end();
+});
+
+test('Config should add a OBJ_PROP to env when obj.prop is set in config', t => {
+  const val = 'test prop';
+  var config = require('./index')({ env: 'test', obj: { prop: val } });
+  t.equal(process.env.OBJ_PROP, val);
+  t.end();
+});

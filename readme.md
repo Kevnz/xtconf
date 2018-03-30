@@ -2,7 +2,7 @@
 
 # xtconf
 
-Extended qconf based on environment
+Extended qconf based on environment. Additionally it will load your settings into environment variables.
 
 ## install
 
@@ -22,6 +22,8 @@ Create a config folder and then json files for each environment like config.deve
 ```
 var config = require('xtconf')();
 config.get('setting');
+// OR
+process.env.SETTING
 ```
 
 You can also create a config.json to share settings against multiple environments

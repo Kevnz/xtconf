@@ -1,7 +1,7 @@
-var qconf = require('qconf');
-var path = require('path');
-var fs = require('fs');
-
+const qconf = require('qconf');
+const path = require('path');
+const fs = require('fs');
+const to = require('to-case');
 module.exports = function(config) {
   var env, configFile, baseConfig, overrides;
   if (arguments.length === 0) {
@@ -32,5 +32,24 @@ module.exports = function(config) {
     }
   }
   var c = qconf(overrides, configFiles);
+  const conf = c.getAll();
+  for (const key in conf) {
+    if (conf.hasOwnProperty(key)) {
+      const element = conf[key];
+      const fkey = to.constant(key);
+
+      if (typeof element === 'object') {
+        for (const subkey in element) {
+          if (element.hasOwnProperty(subkey)) {
+            const subElement = element[subkey];
+            const nestedkey = `${to.constant(key)}_${to.constant(subkey)}`;
+            process.env[nestedkey] = subElement;
+          }
+        }
+      } else {
+        process.env[fkey] = element;
+      }
+    }
+  }
   return c;
 };
