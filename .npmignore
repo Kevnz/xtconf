@@ -1,0 +1,5 @@
+.vscode
+config
+.travis.yml
+.gitignore
+.editorconfig
