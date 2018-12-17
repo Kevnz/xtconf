@@ -2,7 +2,7 @@
 
 # xtconf
 
-Extended qconf based on environment. Additionally it will load your settings into environment variables.
+Configuration based on environment. Additionally it will load your settings into environment variables.
 
 ## install
 
