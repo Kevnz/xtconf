@@ -1,6 +1,6 @@
 {
   "name": "xtconf",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "description": "Configuration module based on environment.",
   "main": "index.js",
   "scripts": {
@@ -20,13 +20,14 @@
   "bugs": {
     "url": "https://github.com/Kevnz/xtconf/issues"
   },
-  "homepage": "https://github.com/Kevnz/xtconf",
+  "homepage": "http://kevinisom.info/xtconf",
   "dependencies": {
     "to-case": "^2.0.0"
   },
   "devDependencies": {
-    "@kev_nz/eslint-config": "^3.0.1",
-    "eslint": "^5.10.0",
-    "tap": "^12.1.1"
+    "@kev_nz/eslint-config": "^3.2.0",
+    "@kev_nz/publisher": "^1.0.1",
+    "eslint": "^5.14.1",
+    "tap": "^12.5.3"
   }
 }
