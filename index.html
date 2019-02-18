@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>xtconf</title>
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <meta name="description" content="Configuration module based on environment." />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+
+<body>
+  <div class="container">
+  <h1 id="xtconf">xtconf</h1>
+<p><a href="https://travis-ci.org/Kevnz/xtconf"><img src="https://travis-ci.org/Kevnz/xtconf.png?branch=master" alt="Build Status" /></a></p>
+<p>Configuration based on environment. Additionally it will load your settings into environment variables.</p>
+<h2 id="install">Install</h2>
+<pre><code class="bash language-bash">npm install xtconf --save</code></pre>
+<h3 id="usage">Usage</h3>
+<p>Create a config folder and then json files for each environment like config.development.json, config.production.json</p>
+<pre><code>\config
+ -config.json
+ -config.development.json
+ -config.production.json
+ -config.test.json</code></pre>
+<pre><code class="js language-js">var config = require('xtconf')();
+config.get('setting');
+// OR
+process.env.SETTING</code></pre>
+<p>You can also create a config.json to share settings against multiple environments</p>
+  </div>
+</body>
