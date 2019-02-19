@@ -1,7 +1,6 @@
 # xtconf
 
-[![Build Status](https://travis-ci.org/Kevnz/xtconf.png?branch=master)](https://travis-ci.org/Kevnz/xtconf)
-
+[![npm version](https://badge.fury.io/js/xtconf.svg)](https://badge.fury.io/js/xtconf) [![Build Status](https://travis-ci.org/Kevnz/xtconf.png?branch=master)](https://travis-ci.org/Kevnz/xtconf)
 
 
 Configuration based on environment. Additionally it will load your settings into environment variables.
