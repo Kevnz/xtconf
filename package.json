@@ -1,6 +1,6 @@
 {
   "name": "xtconf",
-  "version": "4.0.1",
+  "version": "4.1.0",
   "description": "Configuration module based on environment.",
   "main": "index.js",
   "scripts": {

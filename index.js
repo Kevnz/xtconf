@@ -4,8 +4,13 @@ const to = require('to-case')
 const configurator = function(overrides, configFiles) {
   const configs = configFiles.map(config => {
     if (config.indexOf('undefined') > -1) return {}
-    const content = fs.readFileSync(config)
-    return JSON.parse(content)
+    try {
+      const content = fs.readFileSync(config)
+      return JSON.parse(content)
+    } catch (loadError) {
+      console.error(`XTCONF: Failed loading ${config}`)
+    }
+    return {}
   })
   const configProps = Object.assign({}, ...configs, overrides)
 
