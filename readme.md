@@ -1,7 +1,6 @@
 # xtconf
 
-[![npm version](https://badge.fury.io/js/xtconf.svg)](https://badge.fury.io/js/xtconf) [![Build Status](https://travis-ci.org/Kevnz/xtconf.png?branch=master)](https://travis-ci.org/Kevnz/xtconf)
-
+[![npm version](https://badge.fury.io/js/xtconf.svg)](https://badge.fury.io/js/xtconf) ![Build Status](https://img.shields.io/circleci/project/github/Kevnz/xtconf/master.svg) [![Coverage Status](https://coveralls.io/repos/github/Kevnz/xtconf/badge.svg?branch=master)](https://coveralls.io/github/Kevnz/xtconf?branch=master)
 
 Configuration based on environment. Additionally it will load your settings into environment variables.
 
