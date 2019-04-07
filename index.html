@@ -2,39 +2,46 @@
 <html lang="en">
 
 <head>
-  <title>xtconf</title>
+  <title>Creature-Features - Dead simple feature flags - Kevin Isom</title>
   <link rel="stylesheet" type="text/css" href="styles.css" />
-  <meta name="description" content="Configuration module based on environment." />
+  <link rel="stylesheet" type="text/css" href="extend.css" />
+  <meta name="description" content="xtconf - Super easy configuration module based on environment. - Kevin Isom" />
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/styles/github.min.css" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="xtconf - Super easy configuration module based on environment. - Kevin Isom" />
+  <meta property="og:type" content="website" />
+  <meta property="og:description" content="xtconf - Super easy configuration module based on environment. - Kevin Isom" />
+  <meta property="og:url" content="https://kevinisom.info/xtconf" />
+  <meta property="og:image" content="https://avatars3.githubusercontent.com/u/62547?s=400&amp;v=4" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@kev_nz" />
+  <meta name="twitter:title" content="xtconf - Super easy configuration module based on environment. - Kevin Isom @kev_nz" />
+  <meta name="twitter:description" content="xtconf - Super easy configuration module based on environment. - by @kev_nz" />
+  <meta name="twitter:image" content="https://avatars3.githubusercontent.com/u/62547?s=400&amp;v=4" />
+
 </head>
 
 <body>
   <div class="container">
   <h1 id="xtconf">xtconf</h1>
-<p><a href="https://badge.fury.io/js/xtconf"><img src="https://badge.fury.io/js/xtconf.svg" alt="npm version" /></a> <a href="https://travis-ci.org/Kevnz/xtconf"><img src="https://travis-ci.org/Kevnz/xtconf.png?branch=master" alt="Build Status" /></a></p>
+<p><a href="https://badge.fury.io/js/xtconf"><img src="https://badge.fury.io/js/xtconf.svg" alt="npm version" /></a> <img src="https://img.shields.io/circleci/project/github/Kevnz/xtconf/master.svg" alt="Build Status" /> <a href="https://coveralls.io/github/Kevnz/xtconf?branch=master"><img src="https://coveralls.io/repos/github/Kevnz/xtconf/badge.svg?branch=master" alt="Coverage Status" /></a></p>
 <p>Configuration based on environment. Additionally it will load your settings into environment variables.</p>
 <h2 id="install">Install</h2>
-<pre><code class="bash language-bash">npm install xtconf --save</code></pre>
+<pre><code class="hljs bash language-bash">npm install xtconf --save</code></pre>
 <h3 id="usage">Usage</h3>
 <p>Create a config folder and then json files for each environment like config.development.json, config.production.json</p>
-<pre><code>\config
- -config.json
- -config.development.json
- -config.production.json
- -config.test.json</code></pre>
-<pre><code class="js language-js">var config = require('xtconf')();
-config.get('setting');
-// OR
+<pre><code class="hljs">\config
+ -config<span class="hljs-selector-class">.json</span>
+ -config<span class="hljs-selector-class">.development</span><span class="hljs-selector-class">.json</span>
+ -config<span class="hljs-selector-class">.production</span><span class="hljs-selector-class">.json</span>
+ -config<span class="hljs-selector-class">.test</span><span class="hljs-selector-class">.json</span></code></pre>
+<pre><code class="hljs js language-js"><span class="hljs-keyword">var</span> config = <span class="hljs-built_in">require</span>(<span class="hljs-string">'xtconf'</span>)();
+config.get(<span class="hljs-string">'setting'</span>);
+<span class="hljs-comment">// OR</span>
 process.env.SETTING</code></pre>
 <p>You can also create a config.json to share settings against multiple environments</p>
-  </div>
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-64038939-2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag() { dataLayer.push(arguments); }
-  gtag('js', new Date());
-
-  gtag('config', 'UA-64038939-2');
-</script>
-
-</body>
+  
