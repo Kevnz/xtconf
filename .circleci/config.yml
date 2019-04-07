@@ -8,7 +8,6 @@ jobs:
       - checkout
 
       - run: npm install
-      # run tests!
       - run: npm test
       - run: npm run coverage
 
@@ -20,7 +19,6 @@ jobs:
       - checkout
 
       - run: npm install
-      # run tests!
       - run: npm test
 
   "node-8":
@@ -31,7 +29,6 @@ jobs:
       - checkout
 
       - run: npm install
-      # run tests!
       - run: npm test
 
 workflows:
